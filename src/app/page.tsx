@@ -6,12 +6,12 @@ import { Tokens } from "@/.mirrorful/theme"
 import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import { Heading } from "@/components/ui/heading"
-import { Skeleton } from "@/components/ui/skeleton"
-import { StageLight } from "@/components/ui/stage-light"
-import { Icons } from "@/components/icons"
+import { siteConfig } from "@config/site"
+import { Heading } from "@ui/heading"
+import { Skeleton } from "@ui/skeleton"
+import { StageLight } from "@ui/stage-light"
+import { Icons } from "@components/icons"
+import { buttonVariants } from "@components/ui/button"
 
 interface GameData {
   game: {

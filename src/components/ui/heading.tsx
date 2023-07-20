@@ -2,8 +2,6 @@ import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 
-import { Tokens } from "../../.mirrorful/theme"
-
 export function Heading({
   className,
   ...props
