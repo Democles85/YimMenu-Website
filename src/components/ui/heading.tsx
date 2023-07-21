@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 
-import { cn } from "@/lib/utils"
+import { cn } from "@lib/utils"
 
 export function Heading({
   className,
@@ -18,7 +18,7 @@ export function Heading({
           fill: "transparent",
         }}
         className={cn(
-          "mt-20 text-6xl font-[450] tracking-tight drop-shadow-md",
+          "mb-6 mt-[3.25rem] text-6xl font-[450] tracking-tight drop-shadow-md",
           className
         )}
         initial={{

@@ -21,8 +21,9 @@
       "@hooks/*": ["./src/hooks/*"],
       "@utils/*": ["./src/utils/*"],
       "@styles/*": ["./src/styles/*"],
-      "@types/*": ["./src/types/*"],
-      "@config/*": ["./src/config/*"]
+      "@/types/*": ["./src/types/*"],
+      "@config/*": ["./src/config/*"],
+      "@lib/*": ["./src/lib/*"]
     },
     "plugins": [
       {
