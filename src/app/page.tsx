@@ -6,12 +6,12 @@ import axios from "axios"
 
 import { GameData } from "@/types/data"
 import { siteConfig } from "@config/site"
+import { Button } from "@ui/button"
+import { FeatureCard, FeatureCardTitle } from "@ui/feature-card"
 import { Heading } from "@ui/heading"
 import { Skeleton } from "@ui/skeleton"
 import { StageLight } from "@ui/stage-light"
 import { Icons } from "@components/icons"
-
-import { FeatureCard, FeatureCardTitle } from "../components/ui/feature-card"
 
 export default function IndexPage() {
   const { data, isError, isLoading } = useQuery<GameData>(
@@ -41,7 +41,7 @@ export default function IndexPage() {
                     href="https://github.com/Pocakking/BigBaseV2"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-blue-500"
+                    className="text-blue-500 hover:text-blue-600"
                   >
                     BigBaseV2
                   </a>{" "}
@@ -50,7 +50,7 @@ export default function IndexPage() {
                   protecting the user from toxic modders.
                 </p>
               </div>
-              <div className="md:text-md mt-4 flex items-center rounded-md border-[1px] border-[#10B981] bg-[#10B98120] p-2 text-sm lg:text-lg">
+              <div className="md:text-md my-4 flex items-center rounded-md border-[1px] border-[#10B981] bg-[#10B98120] p-2 text-sm lg:text-lg">
                 <Icons.greenTick className="h-5 w-5" />
                 <div className="ml-[0.25rem]">
                   {isLoading ? (
@@ -62,6 +62,29 @@ export default function IndexPage() {
                     </span>
                   )}
                 </div>
+              </div>
+              <div className="my-1 hidden w-full sm:grid sm:grid-cols-2 sm:grid-rows-1 sm:gap-4">
+                <Button className="w-full md:w-auto" variant="default">
+                  <a
+                    href="
+                      https://github.com/YimMenu/YimMenu/releases/download/nightly/YimMenu.dll
+                      "
+                    rel="noreferrer"
+                    className="flex w-full items-center justify-center"
+                  >
+                    Download <Icons.download className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
+                <Button className="w-full md:w-auto" variant="outline">
+                  <a
+                    href="/docs"
+                    rel="noreferrer"
+                    className="flex w-full items-center justify-center"
+                  >
+                    Documentation{" "}
+                    <Icons.documentation className="ml-2 h-5 w-5" />
+                  </a>
+                </Button>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -79,7 +102,7 @@ export default function IndexPage() {
       <section className="flex flex-col items-center justify-center">
         <StageLight />
         <Heading className="text-3xl md:text-4xl lg:text-6xl">Features</Heading>
-        <div className="z-[100] max-w-7xl py-[3rem]">
+        <div className="z-[100] max-w-6xl py-[3rem]">
           <div className="grid w-full grid-cols-3 grid-rows-2 gap-4">
             <FeatureCard className="col-span-2">
               <FeatureCardTitle>
@@ -107,7 +130,10 @@ export default function IndexPage() {
               </div>
             </FeatureCard>
             <FeatureCard className="row-start-2">
-              <FeatureCardTitle>Always Updated</FeatureCardTitle>
+              <FeatureCardTitle>
+                <Icons.updated />
+                Always Updated
+              </FeatureCardTitle>
               <div className="mt-4">
                 <p className="text-sm md:text-base lg:text-base">
                   YimMenu is always updated to the latest version of GTA V. This
@@ -117,7 +143,10 @@ export default function IndexPage() {
               </div>
             </FeatureCard>
             <FeatureCard className="col-span-2 row-start-2">
-              <FeatureCardTitle>Trolling</FeatureCardTitle>
+              <FeatureCardTitle>
+                <Icons.biohazard />
+                Trolling
+              </FeatureCardTitle>
               <div className="mt-4">
                 <p className="text-sm md:text-base lg:text-base">
                   Trying to prank your friends or teach someone, who tried to

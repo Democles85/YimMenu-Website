@@ -12,7 +12,7 @@ const FeatureCard = React.forwardRef<
       {
         ref: ref,
         className: cn(
-          "rounded-sm border border-[#1d283a] bg-[#1d283a]/30 p-[1rem]",
+          "rounded-md border border-[#1d283a] bg-[#1d283a]/30 p-[2rem]",
           className
         ),
       },

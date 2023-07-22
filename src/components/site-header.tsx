@@ -32,7 +32,7 @@ export function SiteHeader() {
   return (
     <header
       className={cn(
-        "sticky top-0 z-40 w-full border-b bg-background",
+        "sticky top-0 z-[999] w-full border-b bg-background",
         isScrolled && "bg-background/30 backdrop-blur-sm"
       )}
     >

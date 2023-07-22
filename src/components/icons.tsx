@@ -1,4 +1,6 @@
 import {
+  Download,
+  FolderCog,
   LucideProps,
   Moon,
   SunMedium,
@@ -12,6 +14,8 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   twitter: Twitter,
+  download: Download,
+  documentation: FolderCog,
   logo: (props: LucideProps) => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
       <path
@@ -75,6 +79,52 @@ export const Icons = {
       <path d="m18 16 4-4-4-4" />
       <path d="m6 8-4 4 4 4" />
       <path d="m14.5 4-5 16" />
+    </svg>
+  ),
+  updated: (props: LucideProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-calendar-clock"
+    >
+      <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
+      <path d="M16 2v4" />
+      <path d="M8 2v4" />
+      <path d="M3 10h5" />
+      <path d="M17.5 17.5 16 16.25V14" />
+      <path d="M22 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z" />
+    </svg>
+  ),
+  biohazard: (props: LucideProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-biohazard"
+    >
+      <circle cx="12" cy="11.9" r="2" />
+      <path d="M6.7 3.4c-.9 2.5 0 5.2 2.2 6.7C6.5 9 3.7 9.6 2 11.6" />
+      <path d="m8.9 10.1 1.4.8" />
+      <path d="M17.3 3.4c.9 2.5 0 5.2-2.2 6.7 2.4-1.2 5.2-.6 6.9 1.5" />
+      <path d="m15.1 10.1-1.4.8" />
+      <path d="M16.7 20.8c-2.6-.4-4.6-2.6-4.7-5.3-.2 2.6-2.1 4.8-4.7 5.2" />
+      <path d="M12 13.9v1.6" />
+      <path d="M13.5 5.4c-1-.2-2-.2-3 0" />
+      <path d="M17 16.4c.7-.7 1.2-1.6 1.5-2.5" />
+      <path d="M5.5 13.9c.3.9.8 1.8 1.5 2.5" />
     </svg>
   ),
 }
