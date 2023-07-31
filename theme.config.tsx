@@ -7,6 +7,6 @@ import { useConfig } from "nextra-theme-docs"
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   docsRepositoryBase:
-    "https://github.com/Democles85/YimMenu-Website/tree/main/src/docs",
+    "https://github.com/Democles85/YimMenu-Website/tree/main/src/pages/docs",
   logo: <span>YimMenu Documentation</span>,
 }
