@@ -1,7 +1,12 @@
-import { Tokens } from "@/.mirrorful/theme"
 import { motion } from "framer-motion"
 
-export function StageLight() {
+export function StageLight({
+  initialColor,
+  whileInViewColor,
+}: {
+  initialColor: string
+  whileInViewColor: string
+}) {
   return (
     <div className="relative z-[-1px] flex flex-col justify-center">
       <div
@@ -15,11 +20,11 @@ export function StageLight() {
           <motion.div
             className="absolute left-0 h-full w-[50%]"
             initial={{
-              background: `conic-gradient(from 90deg at 80% 50%, ${Tokens.colors.purple[100]}, #000000)`,
+              background: `conic-gradient(from 90deg at 80% 50%, ${initialColor}, #000000)`,
               opacity: 0.2,
             }}
             whileInView={{
-              background: `conic-gradient(from 90deg at 60% 50%, ${Tokens.colors.purple[300]}, #000000)`,
+              background: `conic-gradient(from 90deg at 60% 50%, ${whileInViewColor}, #000000)`,
               opacity: 0.8,
             }}
             viewport={{
@@ -33,11 +38,11 @@ export function StageLight() {
           <motion.div
             className="absolute right-0 h-full w-[50%]"
             initial={{
-              background: `conic-gradient(from 270deg at 20% 50%, #000000, ${Tokens.colors.purple[100]})`,
+              background: `conic-gradient(from 270deg at 20% 50%, #000000, ${initialColor})`,
               opacity: 0.2,
             }}
             whileInView={{
-              background: `conic-gradient(from 270deg at 40% 50%, #000000,  ${Tokens.colors.purple[300]})`,
+              background: `conic-gradient(from 270deg at 40% 50%, #000000,  ${whileInViewColor})`,
               opacity: 0.8,
             }}
             viewport={{

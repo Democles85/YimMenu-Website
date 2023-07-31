@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 
 import { GitHubRelease } from "@/types/nightly"
+import { Icons } from "@components/icons"
 
 export function SiteFooter() {
   const { data } = useQuery<GitHubRelease>(["nightlyData"], async () => {
@@ -75,6 +76,7 @@ export function SiteFooter() {
           </span>
           <div className="mt-2">
             <span className="text-sm text-gray-500">
+              <Icons.disclaimer className="mr-1 inline-block h-4 w-4 stroke-orange-400/60" />
               GRAND THEFT AUTO and GRAND THEFT AUTO V FIVE are trademarks of
               Take-Two Interactive Software, Inc. We are not affiliated with,
               authorized by, sponsored by, or otherwise approved by Take-Two
@@ -93,7 +95,7 @@ export function SiteFooter() {
                   Nightly
                 </a>
               ) : (
-                "build"
+                "Build"
               )}{" "}
               Build: {formatRelativeTime(date)}
             </span>

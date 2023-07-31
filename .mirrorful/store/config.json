@@ -228,6 +228,63 @@
 					"value": "#BEBEBE",
 					"type": "color"
 				}
+			},
+			"Dark Blue": {
+				"50": {
+					"id": "41169ed5-fdcc-492d-b13f-2bd77e181a8a",
+					"value": "#5b89af",
+					"type": "color"
+				},
+				"100": {
+					"id": "33ab160b-7c30-4dec-8c92-ab10a7c144ef",
+					"value": "#4b779b",
+					"type": "color"
+				},
+				"200": {
+					"id": "436c0740-1f5e-4c76-bc64-cc28da151411",
+					"value": "#406583",
+					"type": "color"
+				},
+				"300": {
+					"id": "ac693c65-c353-410d-a17e-01a951d05731",
+					"value": "#34526b",
+					"type": "color"
+				},
+				"400": {
+					"id": "09965b3b-ce49-4cb7-a161-e966cc9586a8",
+					"value": "#2b4358",
+					"type": "color"
+				},
+				"500": {
+					"id": "087f9ca2-09c9-4df5-95a0-41d1b444e638",
+					"value": "#1f3140",
+					"type": "color"
+				},
+				"600": {
+					"id": "070defed-e74a-421b-8b53-cda33b8d58af",
+					"value": "#131f28",
+					"type": "color"
+				},
+				"700": {
+					"id": "124ea3d6-1f0a-4b50-86e0-90137ad84107",
+					"value": "#000000",
+					"type": "color"
+				},
+				"800": {
+					"id": "6de7e096-7434-4c6c-a455-e3d3cac271aa",
+					"value": "#000000",
+					"type": "color"
+				},
+				"900": {
+					"id": "019cd80a-b8b5-45f8-b278-5e5b7bfab588",
+					"value": "#000000",
+					"type": "color"
+				},
+				"base": {
+					"id": "8c7e3671-6fa3-4969-9af6-6e5b10e272f1",
+					"value": "#1F3140",
+					"type": "color"
+				}
 			}
 		},
 		"typography": {

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import { Tokens } from "@/.mirrorful/theme"
 import { useQuery } from "@tanstack/react-query"
 import axios from "axios"
 
@@ -50,11 +51,11 @@ export default function IndexPage() {
                   protecting the user from toxic modders.
                 </p>
               </div>
-              <div className="md:text-md my-4 flex items-center rounded-md border-[1px] border-[#10B981] bg-[#10B98120] p-2 text-sm lg:text-lg">
+              <div className="md:text-md lg:text-md my-4 flex items-center rounded-md border-[1px] border-[#10B981] bg-[#10B98120] p-2 text-sm">
                 <Icons.greenTick className="h-5 w-5" />
                 <div className="ml-[0.25rem]">
                   {isLoading ? (
-                    <Skeleton className="h-[24px] w-[300px] max-w-[360px] rounded-full bg-[#10B981]/30 md:h-[24px] lg:h-[28px]" />
+                    <Skeleton className="h-[20px] w-[300px] max-w-[360px] rounded-full bg-[#10B981]/30" />
                   ) : (
                     <span>
                       YimMenu is working on v{data?.game.build} ( Online v
@@ -64,27 +65,29 @@ export default function IndexPage() {
                 </div>
               </div>
               <div className="my-1 hidden w-full sm:grid sm:grid-cols-2 sm:grid-rows-1 sm:gap-4">
-                <Button className="w-full md:w-auto" variant="default">
-                  <a
-                    href="
-                      https://github.com/YimMenu/YimMenu/releases/download/nightly/YimMenu.dll
-                      "
-                    rel="noreferrer"
+                <a
+                  href={
+                    "https://github.com/YimMenu/YimMenu/releases/download/nightly/YimMenu.dll"
+                  }
+                  rel="noreferrer"
+                  className="w-full md:w-auto"
+                >
+                  <Button
                     className="flex w-full items-center justify-center"
+                    variant="default"
                   >
                     Download <Icons.download className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <Button className="w-full md:w-auto" variant="outline">
-                  <a
-                    href="/docs"
-                    rel="noreferrer"
+                  </Button>
+                </a>
+                <a href="/docs" rel="noreferrer" className="w-full md:w-auto">
+                  <Button
                     className="flex w-full items-center justify-center"
+                    variant="outline"
                   >
                     Documentation{" "}
                     <Icons.documentation className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -100,7 +103,10 @@ export default function IndexPage() {
       </section>
 
       <section className="flex flex-col items-center justify-center">
-        <StageLight />
+        <StageLight
+          initialColor={Tokens.colors.purple[100]}
+          whileInViewColor={Tokens.colors.purple[300]}
+        />
         <Heading className="text-3xl md:text-4xl lg:text-6xl">Features</Heading>
         <div className="z-[100] max-w-6xl py-[3rem]">
           <div className="grid w-full grid-cols-3 grid-rows-2 gap-4">
@@ -157,6 +163,16 @@ export default function IndexPage() {
             </FeatureCard>
           </div>
         </div>
+      </section>
+
+      <section className="flex flex-col items-center justify-center pt-[8rem]">
+        <StageLight
+          initialColor={Tokens.colors["dark-blue"][100]}
+          whileInViewColor={Tokens.colors["dark-blue"][300]}
+        />
+        <Heading className="flex-wrap text-center text-3xl after:box-border after:block after:pb-[0.6rem] after:content-[''] md:text-4xl lg:text-6xl">
+          YimMenu is and will <br /> always be free
+        </Heading>
       </section>
     </>
   )

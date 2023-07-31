@@ -1,4 +1,5 @@
 import {
+  AlertTriangle,
   Download,
   FolderCog,
   LucideProps,
@@ -43,6 +44,8 @@ export const Icons = {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="lucide lucide-check"
+      {...props}
     >
       <polyline points="20 6 9 17 4 12" />
     </svg>
@@ -59,6 +62,7 @@ export const Icons = {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-shield"
+      {...props}
     >
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
     </svg>
@@ -93,6 +97,7 @@ export const Icons = {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-calendar-clock"
+      {...props}
     >
       <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5" />
       <path d="M16 2v4" />
@@ -114,6 +119,7 @@ export const Icons = {
       strokeLinecap="round"
       strokeLinejoin="round"
       className="lucide lucide-biohazard"
+      {...props}
     >
       <circle cx="12" cy="11.9" r="2" />
       <path d="M6.7 3.4c-.9 2.5 0 5.2 2.2 6.7C6.5 9 3.7 9.6 2 11.6" />
@@ -125,6 +131,25 @@ export const Icons = {
       <path d="M13.5 5.4c-1-.2-2-.2-3 0" />
       <path d="M17 16.4c.7-.7 1.2-1.6 1.5-2.5" />
       <path d="M5.5 13.9c.3.9.8 1.8 1.5 2.5" />
+    </svg>
+  ),
+  disclaimer: (props: LucideProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-alert-triangle"
+      {...props}
+    >
+      <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+      <path d="M12 9v4" />
+      <path d="M12 17h.01" />
     </svg>
   ),
 }
